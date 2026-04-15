@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Client Intake Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 700px;
+      background: #fff;
+      padding: 25px;
+      margin: auto;
+      border-radius: 8px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px;
+      width: 100%;
+      background: black;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #333;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Business Website Questionnaire</h1>
+
+  <form action="https://formspree.io/f/YOUR-ID" method="POST">
+
+    <label>Business Name</label>
+    <input type="text" name="business_name" required>
+
+    <label>What services or products do you offer?</label>
+    <textarea name="services" required></textarea>
+
+    <label>What is the main goal of your website?</label>
+    <textarea name="goals"></textarea>
+
+    <label>Who are your typical customers?</label>
+    <textarea name="audience"></textarea>
+
+    <label>What makes your business unique?</label>
+    <textarea name="unique_value"></textarea>
+
+    <label>What pages do you want on your website?</label>
+    <textarea name="pages"></textarea>
+
+    <label>Do you need any features? (booking, contact form, gallery, etc.)</label>
+    <textarea name="features"></textarea>
+
+    <label>Do you have a preferred style or colors?</label>
+    <textarea name="design"></textarea>
+
+    <label>Ideal timeline for the website?</label>
+    <input type="text" name="timeline">
+
+    <label>Budget (optional)</label>
+    <input type="text" name="budget">
+
+    <button type="submit">Submit</button>
+
+  </form>
+</div>
+
+</body>
+</html>
